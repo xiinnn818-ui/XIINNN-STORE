@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XIINNN STORE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">XZ</div>
+      <h1 class="store-name">XIINNN STORE</h1>
+    </header>
+    <main>
+      <div class="qris-section">
+        <img src="assets/qris.png" alt="QRIS XIINNN STORE" class="qris-img">
+        <p>Scan untuk pembayaran</p>
+        <div class="copy-section">
+          <input type="text" id="qris-number" value="089512764786" readonly>
+          <button onclick="copyNumber()">Salin</button>
+        </div>
+        <a href="assets/qris.png" download="XIINNN_STORE_QRIS.png">
+          <button class="download-btn">Unduh QRIS</button>
+        </a>
+      </div>
+      <div class="info-section">
+        <p>[OPEN ORDER]:</p>
+        <ul>
+          <li>Jual Akun</li>
+          <li>Suntik Sosmed</li>
+          <li>Rekber/Berber</li>
+          <li>Jual Panel Jasteb</li>
+          <li>APK Kebutuhan JB</li>
+        </ul>
+        <p class="note">Selain Nomor Ini "HATI" CLONE!!!!</p>
+      </div>
+    </main>
+    <footer>
+      <p>Hubungi kami:</p>
+      <div class="social-links">
+        <a href="https://wa.me/+6289512764786" target="_blank">WhatsApp: +62 895-1276-4786</a>
+        <a href="https://instagram.com/fvckyoupunk" target="_blank">Instagram: @fvckyoupunk</a>
+      </div>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+style.css (Tidak Berubah)
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: url('assets/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  max-width: 600px;
+  width: 100%;
+}
+
+.logo {
+  font-size: 2em;
+  color: #00ffcc;
+  text-shadow: 2px 2px 4px #000;
+  margin-bottom: 10px;
+}
+
+.store-name {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 2px 2px 6px #00ffcc;
+  margin: 0;
+}
+
+.qris-section {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.qris-img {
+  max-width: 250px;
+  width: 100%;
+  margin: 10px 0;
+  border: 4px solid #ff4444;
+}
+
+.copy-section {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+input {
+  padding: 10px;
+  font-size: 1em;
+  background-color: #222;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #00ffcc;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #00b388;
+}
+
+.download-btn {
+  background-color: #ff4444;
+  color: #fff;
+}
+
+.download-btn:hover {
+  background-color: #cc0000;
+}
+
+.info-section {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.info-section ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  margin: 10px auto;
+  max-width: 200px;
+}
+
+.info-section li {
+  margin: 5px 0;
+}
+
+.note {
+  font-size: 0.9em;
+  color: #ff4444;
+  margin-top: 10px;
+}
+
+footer {
+  margin-top: 20px;
+}
+
+.social-links a {
+  color: #00ffcc;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .qris-img {
+    max-width: 200px;
+  }
+  .store-name {
+    font-size: 2em;
+  }
+  .logo {
+    font-size: 1.5em;
+  }
+}
